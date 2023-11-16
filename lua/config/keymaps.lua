@@ -46,3 +46,9 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- highlight
 keymap.set("n", "<leader>n", ":nohl<Return>", { silent = true })
+
+-- git
+keymap.set("n", "<leader>gs", vim.cmd.Git)
+keymap.set("n", "<leader>gd", vim.cmd.Gdiffsplit)
+keymap.set("n", "gu", "<cmd>diffget //2<CR>")
+keymap.set("n", "gh", "<cmd>diffget //3<CR>")

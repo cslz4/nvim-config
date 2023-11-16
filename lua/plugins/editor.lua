@@ -15,7 +15,7 @@ return {
         desc = "Find fzfPlugin File",
       },
       {
-        ";f",
+        "<leader>ff",
         function()
           local builtin = require("telescope.builtin")
           builtin.find_files({
@@ -25,7 +25,7 @@ return {
         end,
       },
       {
-        ";r",
+        "<leader>fs",
         function()
           local builtin = require("telescope.builtin")
           builtin.live_grep()
