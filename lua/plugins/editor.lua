@@ -105,7 +105,7 @@ return {
       })
       opts.pickers = {
         diagnostics = {
-          theme = "ivy",
+          theme = "dropdown",
           initial_mode = "normal",
           layout_config = {
             preview_cutoff = 9999,
@@ -140,9 +140,9 @@ return {
           },
         },
       }
+      telescope.load_extension("fzf")
+      telescope.load_extension("file_browser")
       telescope.setup(opts)
-      require("telescope").load_extension("fzf")
-      require("telescope").load_extension("file_browser")
     end,
   },
   {
