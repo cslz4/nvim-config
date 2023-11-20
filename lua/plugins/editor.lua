@@ -86,6 +86,7 @@ return {
           })
         end,
       },
+      { "<leader>gs", false },
     },
     config = function(_, opts)
       local telescope = require("telescope")
