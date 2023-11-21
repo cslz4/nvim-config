@@ -53,7 +53,7 @@ return {
         end,
       },
       {
-        ";e",
+        ";d",
         function()
           local builtin = require("telescope.builtin")
           builtin.diagnostics()
